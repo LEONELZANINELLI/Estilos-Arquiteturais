@@ -1,8 +1,8 @@
 package Factory_Method;
 
-public class EnvioEmail implements IntNotificacoes{
+public class EnvioEmail implements Notificacoes {
     @Override
     public void enviar() {
-        System.out.println("Envio Email!");
+        System.out.println("Enviando notificação por Email...");
     }
 }

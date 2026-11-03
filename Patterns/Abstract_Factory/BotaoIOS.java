@@ -1,8 +1,8 @@
 package Abstract_Factory;
 
-public class BotaoIOS implements Botao {
+public class BotaoIOS implements Botao{
     @Override
     public void renderizarBotao() {
-        System.out.println("Botão IOS");
+        System.out.println("Renderizando botão no estilo iOS.");
     }
 }

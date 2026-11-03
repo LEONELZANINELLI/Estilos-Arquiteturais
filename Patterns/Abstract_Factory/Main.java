@@ -1,27 +1,15 @@
+
 package Abstract_Factory;
 
 public class Main {
     public static void main(String[] args) {
-        String tipo = "android";
 
-        if(tipo.equals("ios")){
-            Fabrica fabricaIOS = new FabricaIOS();
+        String tipo = "Android";
 
-            Botao btnIOS = fabricaIOS.criarBotao();
-            Input inputIOS = fabricaIOS.criarInput();
+        Fabrica factory = FactoryRegistry.obterFactory(tipo);
 
-            btnIOS.renderizarBotao();
-            inputIOS.renderizarInput();
+        Aplicacao app = new Aplicacao(factory);
 
-        }else if (tipo.equals("android")){
-            Fabrica fabricaAndroid = new FabricaAndroid();
-
-            Botao btnAndroid = fabricaAndroid.criarBotao();
-            Input inputAndroid = fabricaAndroid.criarInput();
-
-            btnAndroid.renderizarBotao();
-            inputAndroid.renderizarInput();
-        }
-
+        app.renderizar();
     }
 }

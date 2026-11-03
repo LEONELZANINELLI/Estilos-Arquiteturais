@@ -1,8 +1,8 @@
 package Abstract_Factory;
 
-public class InputAndroid implements Input {
+public class InputAndroid implements Input{
     @Override
     public void renderizarInput() {
-        System.out.println("Input Android");
+        System.out.println("Renderizando input no estilo Android.");
     }
 }

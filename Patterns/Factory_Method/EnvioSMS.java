@@ -1,8 +1,8 @@
 package Factory_Method;
 
-public class EnvioSMS implements IntNotificacoes {
+public class EnvioSMS implements Notificacoes {
     @Override
     public void enviar() {
-        System.out.println("Envio por SMS");
+        System.out.println("Enviando notificação por SMS...");
     }
 }
